@@ -139,10 +139,3 @@ Used for training and evaluating deep learning models.
 Vishwa Narayanaswamy
 
 ```
-
----
-
-
-
-Just say 👍
-```
