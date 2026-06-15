@@ -1,70 +1,148 @@
-# Vehicle Image Classification
+Here is your **complete polished README in one block** — ready to copy and paste directly into GitHub:
 
-## Overview
+```markdown
+# 🚗 Vehicle Image Classification System
 
-This project develops a deep learning-based vehicle image classification system capable of classifying images into seven vehicle categories:
+## 📌 Overview
 
-* Auto Rickshaws
-* Bikes
-* Cars
-* Motorcycles
-* Planes
-* Ships
-* Trains
+This project is a deep learning-based vehicle image classification system that classifies images into **7 categories**:
 
-The project compares a Custom CNN model with transfer learning models (MobileNetV2 and EfficientNetB0) to evaluate classification performance. Various evaluation techniques such as confusion matrices, classification reports, ROC curves, and SHAP visualizations are used to analyze model performance.
+- Auto Rickshaws  
+- Bikes  
+- Cars  
+- Motorcycles  
+- Planes  
+- Ships  
+- Trains  
+
+The project compares multiple deep learning approaches:
+- Custom CNN Model  
+- Transfer Learning (MobileNetV2)  
+- Transfer Learning (EfficientNetB0)  
+
+Model performance is evaluated using:
+- Confusion Matrix  
+- Classification Report  
+- ROC Curves  
+- SHAP Explainability Visualizations  
+
+A **Streamlit web application** is also included for real-time image prediction.
 
 ---
 
-## How to Run
+## 🧠 Model Details
 
-### Option 1: Kaggle
+- Input Size: 224x224 images  
+- Framework: TensorFlow / Keras  
+- Best Model: Custom CNN (or best-performing model)  
+- Loss Function: Categorical Crossentropy  
+- Optimizer: Adam  
 
-1. Open the notebook in Kaggle.
-2. Attach the Vehicle Classification dataset.
-3. Run all cells from top to bottom.
-4. Generated outputs will be saved in:
+---
 
-```text
-/kaggle/working/
+## 📂 Project Structure
+
 ```
 
+Vehicle-Classification-System/
+│
+├── app.py                         # Streamlit frontend
+├── vehicle-classification-system.ipynb   # Model training notebook
+├── best_model.keras              # Trained model (not uploaded to GitHub)
+├── requirements.txt
+├── README.md
+
+````
+
 ---
 
-### Option 2: Local System
+## 🚀 How to Run
 
-#### Install Required Libraries
+### 🔹 1. Install Dependencies
 
 ```bash
-pip install tensorflow numpy pandas matplotlib seaborn scikit-learn shap pillow
-```
+pip install -r requirements.txt
+````
 
-#### Update Dataset Path
-
-Replace the dataset path in the notebook with your local dataset location.
-
-```python
-DATASET_PATH = "your_dataset_path"
-```
-
-#### Run the Notebook
+OR manually:
 
 ```bash
-jupyter notebook
+pip install tensorflow streamlit numpy pandas matplotlib seaborn scikit-learn shap pillow
 ```
-
-Open the notebook and execute all cells sequentially.
 
 ---
 
-## Output
+### 🔹 2. Run Streamlit App
 
-The notebook generates:
+```bash
+streamlit run app.py
+```
 
-* Trained Models
-* Accuracy and Loss Curves
-* Confusion Matrices
-* Classification Reports
-* ROC Curves
-* SHAP Visualizations
-* Performance Comparison Results
+---
+
+## ⚠️ Important Note (Model File)
+
+The trained model file (`best_model.keras`) is not included in this repository because it exceeds GitHub's 100MB file limit.
+
+👉 To run the project:
+
+* Download or keep `best_model.keras` locally
+* Place it in the same directory as `app.py`
+
+---
+
+## 📊 Outputs Generated
+
+* Trained models
+* Accuracy & loss curves
+* Confusion matrices
+* Classification reports
+* ROC curves
+* SHAP explanations
+* Model comparison results
+
+---
+
+## 🖥️ Features of Streamlit App
+
+* Upload vehicle image
+* Real-time prediction
+* Displays predicted class
+* Confidence score output
+* Simple and interactive UI
+
+---
+
+## 📌 Dataset
+
+Dataset contains vehicle images categorized into 7 classes:
+Auto Rickshaws, Bikes, Cars, Motorcycles, Planes, Ships, Trains.
+
+Used for training and evaluating deep learning models.
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* TensorFlow / Keras
+* Streamlit
+* NumPy / Pandas
+* Matplotlib / Seaborn
+* Scikit-learn
+* SHAP
+
+---
+
+## 👨‍💻 Author
+
+Vishwa Narayanaswamy
+
+```
+
+---
+
+
+
+Just say 👍
+```
